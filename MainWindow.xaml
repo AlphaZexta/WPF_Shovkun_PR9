@@ -1,0 +1,27 @@
+﻿<Window x:Class="WPF_Shovkun_PR9.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Shovkun_PR9"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <ListBox Grid.Row="0" Name="phoneslist">
+            <TextBlock FontWeight="Bold" TextDecorations="Underline" Text="Много нового текста"/>
+            <ListBoxItem Background="LightGray">Мама мыла рамуx</ListBoxItem>
+            <ListBoxItem>HКГБ ПОУ АПТ</ListBoxItem>
+            <ListBoxItem Background="LightGray">Чота здесь есть</ListBoxItem>
+            <ListBoxItem>ПР9</ListBoxItem>
+            <ListBoxItem Background="LightGray">Букавки ыы</ListBoxItem>    
+        </ListBox>
+
+        <TextBlock x:Name="TextBlock" Text="444" Width="200" Height="40" VerticalAlignment="Top" Margin="10,250,590,0"/>
+        <Button x:Name="Button" Content="Пуск" Grid.Row="1" Height="30" Click="Button_Click"/>
+        <TextBlock x:Name="Schet" Grid.Row="1" Text="Количество символов" Width="200" Height="50" VerticalAlignment="Bottom"/>
+    </Grid>
+</Window>
